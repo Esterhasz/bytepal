@@ -192,7 +192,6 @@ ANSI_HOME
 ANSI_CURSOR_HIDE
 ANSI_CURSOR_SHOW
 ```
-You can also use your own ANSI escape sequences.
 
 ## Installation
 bytepal is header-only.
@@ -200,8 +199,6 @@ bytepal is header-only.
 1. Copy `bytepal.h` into your project. 
 2. Add `#include "bytepal.h"`
 3. You're done!
-
-No build system or additional dependencies are required.
 
 ## Requirements
 * C++11 or newer
