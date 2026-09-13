@@ -192,5 +192,15 @@ namespace bytepal {
 		const Pixel& at(std::size_t x, std::size_t y) const {
 			return _buffer[y * _width + x];
 		}
+
+		std::size_t width() const {
+			return _width;
+		}
+		std::size_t height() const {
+			return _height;
+		}
+		std::uint8_t pixelWidth() const {
+			return _pixelWidth;
+		}
 	};
 }
