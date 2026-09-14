@@ -1,11 +1,9 @@
 # bytepal
-### Turn your console into a GUI!
 A single-header C++ library for rendering colorful 2D graphics directly in your terminal.
 The project uses ANSI escape sequences and a 2D buffer to turn terminal characters into simple graphical pixels.
 Combine different colors and primitives to build simple interfaces, visualizations, games, and other terminal graphics!
 
 ## Features
-
 * Single `bytepal.h` header
 * No external dependencies
 * ANSI foreground and background colors
@@ -16,9 +14,33 @@ Combine different colors and primitives to build simple interfaces, visualizatio
 * Customizable terminal output
 * Lightweight API
 
-## This is console output!
-![Demo](media/gifPlayerHeart.gif)
+## Demos
+<table border="0">
+  <tr>
+    <td align="center" width="50%">
+      <img src="media/imageExample.png" alt="Image Rendering Demo" style="width:100%;">
+    </td>
+    <td align="center" width="50%">
+      <img src="media/gifPlayerHeart.gif" alt="Animated Heart Demo" style="width:100%;">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><i>Original artwork from <b>defector</b> by <b>akitakita</b> (used with permission)</i></td>
+    <td align="center"><i>Gif player demo</i></td>
+  </tr>
+</table>
 
+## Installation
+bytepal is header-only.
+
+1. Copy `bytepal.h` into your project. 
+2. Add `#include "bytepal.h"`
+3. You're done!
+
+### Requirements
+* C++11 or newer
+* An ANSI-compatible terminal
+  
 ## Quick Start
 
 ```cpp
@@ -193,19 +215,12 @@ ANSI_CURSOR_HIDE
 ANSI_CURSOR_SHOW
 ```
 
-## Installation
-bytepal is header-only.
-
-1. Copy `bytepal.h` into your project. 
-2. Add `#include "bytepal.h"`
-3. You're done!
-
-## Requirements
-* C++11 or newer
-* An ANSI-compatible terminal
-
 ## Notes
 The project is intended for terminals that support ANSI escape sequences.
 
 `Pixel::data` is treated as a sequence of single-byte characters. UTF-8 character handling is not provided.
 `Buffer2D::at()` performs no bounds checking. Use `plot()` when coordinates may be outside the buffer.
+
+## Credits
+* **[stb_image](https://github.com/nothings/stb)** by *Sean Barrett* is used for loading images/GIF frames in demo processing.
+* Thanks to [akitakita](https://akitakita.bandcamp.com) for permission to use their album cover for the demo.
