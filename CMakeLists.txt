@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.20)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories("include")
+include_directories("include" "demos/include")
 project ("bytepal")
 
 file (GLOB_RECURSE SRC_FILES 
@@ -12,6 +12,9 @@ file (GLOB_RECURSE SRC_FILES
 	
 	"demos/*.hpp"
 	"demos/*.h"
+	"demos/include/*.hpp"
+	"demos/include/*.h"
+
 	"demos/*.cpp"
 )
 
