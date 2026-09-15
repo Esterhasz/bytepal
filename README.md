@@ -25,7 +25,7 @@ Combine different colors and primitives to build simple interfaces, visualizatio
     </td>
   </tr>
   <tr>
-    <td align="center"><i>Original artwork from <b>defector</b> by <b>akitakita</b> (used with permission)</i></td>
+    <td align="center"><i>From <b>defector</b> by <b>akitakita</b></i></td>
     <td align="center"><i>Gif player demo</i></td>
   </tr>
 </table>
